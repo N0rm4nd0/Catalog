@@ -17,8 +17,19 @@
     justify-content: space-between;
 }
 
+.login{
+    display: flex;
+    flex-direction: row;
+}
+
+p.login{
+    margin: 3px;
+    color: #fff;
+}
+
 button.login{
-    padding: 15px;
+    height: 30px;
+    width: 30px;
     border-radius: 50%;
 }
 
