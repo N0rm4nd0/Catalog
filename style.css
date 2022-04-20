@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#cabecalho{
+    background-color: rgb(30, 30, 30);
+    padding: 30px;
+    position: fixed;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+button.login{
+    padding: 15px;
+    border-radius: 50%;
+}
+
+#fakeheader{ 
+    height: 80px;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    background-color: rgb(21, 21, 21);
+}
+.elements{
+    justify-self: center;
+    margin: 15px;
+    background-color: rgb(255, 0, 0);
+    height: 210px;
+    width: 140px;
+}
+

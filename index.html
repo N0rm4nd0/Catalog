@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <title>3° Projeto</title>
+    <style>
+        .btn-primary{
+            background-color: rgb(255, 0, 0);
+            border-color: rgb(255, 0, 0);
+        }
+        .btn-primary:hover{
+            background-color: rgb(210, 0, 0);
+            border-color: rgb(210, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <header id="cabecalho">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" onclick="marvel()" class="btn btn-primary">MARVEL</button>
+            <button type="button" onclick="dc()" class="btn btn-primary">DC</button>
+            <button type="button" onclick="ghibli()" class="btn btn-primary">GHIBLI</button>
+        </div>
+        <div class="login">
+            <button type="button" class="login" onclick="loginTab()"></button>
+        </div>
+    </header>
+    <div id="fakeheader"></div>
+    <main id="pai"> 
+        <div class="elements"><a href="https://www.youtube.com/watch?v=8ugaeA-nMTc" target="_blank"><img src="https://media.fstatic.com/04ehq2IeWqrR344O6Xz9Y4tkTyA=/290x478/smart/media/movies/covers/2010/08/dbf0c88f7ead4b50ce591879dcfd7735.jpg" alt="" height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=wKtcmiifycU" target="_blank"><img src="https://media.fstatic.com/hCx-7_dReCbKF1UcnGoKC12yZ0M=/290x478/smart/media/movies/covers/2010/07/20bf0535fffc68aed3f55bebb4fe88cc.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=JOddp-nlNvQ" target="_blank"><img src="https://media.fstatic.com/m02E9-eKtWOVyQaXZYeKRNuHj0g=/290x478/smart/media/movies/covers/2011/04/13a8ef84d36f39bc56920804762b5a0e.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=qi5UTD7kEr0" target="_blank"><img src="https://media.fstatic.com/SIae863K0DjlB5-4umIKH9oDWvA=/290x478/smart/media/movies/covers/2011/07/4fbc1fa00ba6b10c1317db8034b23b27.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=eOrNdBpGMv8" target="_blank"><img src="https://media.fstatic.com/chC9B_IcFe_Xq_bQs6YbURb85J0=/290x478/smart/media/movies/covers/2014/06/os-vingadores-the-avengers_t15324.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=igfXmU1r_mc" target="_blank"><img src="https://media.fstatic.com/N3_soaTcuGkGmfvjXG7nrjTwjc4=/290x478/smart/media/movies/covers/2013/02/98c943ad8d9ed3a1a189c236f7176a6e.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=5sUfuOj7zOw" target="_blank"><img src="https://media.fstatic.com/edKPtvSBP0itAQJzoXrLN3-KK-I=/290x478/smart/media/movies/covers/2013/08/thor-o-mundo-sombrio_t37153.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=Fl89Ym_fQJc" target="_blank"><img src="https://media.fstatic.com/qH1shhY-pyxR7xpuut1e4ypEU7E=/290x478/smart/media/movies/covers/2014/01/capitao-america-2-o-soldado-invernal_t36364_6.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=8VN_l57QWyQ" target="_blank"><img src="https://media.fstatic.com/xX_mp_GHKzMbnNttepSJRFdoF_8=/290x478/smart/media/movies/covers/2014/05/guardioes-da-galaxia_t59375_6.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=lGO6FcnZ0ek" target="_blank"><img src="https://media.fstatic.com/Q5CMAVAR-TXI6IsaT1BjhRDUDVk=/290x478/smart/media/movies/covers/2015/02/vingadores-era-de-ultron_t55817_W865z0A.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=wITUolzfkwI" target="_blank"><img src="https://media.fstatic.com/NAqy-uUI35HlWDQNKt_ZiCk2GkI=/290x478/smart/media/movies/covers/2015/05/homem-formiga_t24609_FBdKUeI.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=dKrVegVI0Us" target="_blank"><img src="https://media.fstatic.com/05bzyXHrICc27IS0dTlDRHylT_I=/290x478/smart/media/movies/covers/2016/03/capitao-america-guerra-civil_t93414_1ZIsJit.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=Lt-U_t2pUHI" target="_blank"><img src="https://media.fstatic.com/UsI4lGH2I2x-NUXFNjBAAvf8OQM=/290x478/smart/media/movies/covers/2016/04/doutor-estranho_t51449_BlhZ3xp.jpg-large" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=dW1BIid8Osg" target="_blank"><img src="https://media.fstatic.com/TMc1XATEjyfgC9pBWhi3CJUb8A4=/290x478/smart/media/movies/covers/2017/03/IMG_20170305_231021.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=39udgGPyYMg" target="_blank"><img src="https://media.fstatic.com/TqQQzao1-l-dPR20nkpDLCWpyGw=/290x478/smart/media/movies/covers/2017/05/18740549_1497541060277272_1871631708025038851_n.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=UvNnqWLruXA" target="_blank"><img src="https://media.fstatic.com/Jn8p90mmhtuj-HAaW5CAinsgyew=/290x478/smart/media/movies/covers/2017/08/thor-ragnarok-poster.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=xjDjIWPwcPU" target="_blank"><img src="https://media.fstatic.com/bT7-wP0aCmVFCT-MheOfNr69jMo=/290x478/smart/media/movies/covers/2018/06/Black-Panther-poster-main-xl.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=QwievZ1Tx-8" target="_blank"><img src="https://media.fstatic.com/0a76J8ZlXK9QxqxT1dN9wZc9jC8=/290x478/smart/media/movies/covers/2018/03/3651678.jpg-r_770_1100-f_jpg-q_x-xxyxx.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=UUkn-enk2RU" target="_blank"><img src="https://media.fstatic.com/Rq0N_th8kUVkx5beJ2Ud6FQgccQ=/290x478/smart/media/movies/covers/2018/07/z4GC7e0XFBYT350DQhvED2ruxd6rQQwdJ1_3WB-jvErs.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=FV7AxLbHcrE" target="_blank"><img src="https://media.fstatic.com/7wBfjQYIP6wgPvw1TrWdgSHaMvA=/290x478/smart/media/movies/covers/2019/02/51311724_608483852912564_7866840095683248128_n.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=g6ng8iy-l0U" target="_blank"><img src="https://media.fstatic.com/8_zFDrsjwiD2BQrPE_PZSnOwHd4=/290x478/smart/media/movies/covers/2019/03/d1nmwmgvaaajv5mjpg-large_4c7c.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=ybji16u608U" target="_blank"><img src="https://media.fstatic.com/SjTSC1cPqeHicxkl9RjRJySP0lY=/290x478/smart/media/movies/covers/2021/06/black_widow_ver21.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=DYYtuKyMtY8" target="_blank"><img src="https://assets0.minhaserie.com.br/uploads/editor_pictures/000/072/463/content_pic.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=xdBWrkcmMwU&t=4s" target="_blank"><img src="https://media.fstatic.com/KUMGOc2RrCXL2UoSNcHo7vnqpf8=/290x478/smart/media/movies/covers/2021/05/E1MZ4YTWUAEmnGk.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=NZxfnJt9vKo" target="_blank"><img src="https://media.fstatic.com/uhLxnWEzXuUgUctbn-AL6P59E9I=/290x478/smart/media/movies/covers/2020/09/EiZrsPgXsAA7ffF.jpeg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href=https://www.youtube.com/watch?v=QJh49Yunotg" target="_blank"><img src="https://media.fstatic.com/Stk0amZ0RnX3omW1jMHOqMBgpSo=/290x478/smart/media/movies/covers/2021/02/EtqYYCvVIAAWAr2.jpeg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=AfHiUtxrmiY" target="_blank"><img src="https://media.fstatic.com/nmcPhjlulc6wnQyOyFHTki86-KA=/290x478/smart/media/movies/covers/2021/07/E7jF7W6X0AYucYc.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=PJza3ZaFeAU" target="_blank"><img src="https://media.fstatic.com/2sfa86pTKDnhwnQVH1c-sqn7epY=/290x478/smart/media/movies/covers/2021/08/E9H_SRQVkAgZecl.jpeg.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=JfVOs4VSpmA" target="_blank"><img src="https://media.fstatic.com/gSyLFzXAf_FZ3CPCB9_3WZ_Oto0=/290x478/smart/media/movies/covers/2021/11/FB_IMG_1637847121230.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=zq-dKITdTsE&t=2s" target="_blank"><img src="https://media.fstatic.com/8qp2R7-Csf4LhilHh_utuviZY6s=/290x478/smart/media/movies/covers/2021/07/E5yZsfQXoAQ-iOh.jpg" alt=""height="210" width="140"></a></div>
+        <div class="elements"><a href="https://www.youtube.com/watch?v=C-Wi9qu--0k" target="_blank"><img src="https://media.fstatic.com/JbGZMMiQQOnIPMBbIFSIm-avJ5U=/290x478/smart/media/movies/covers/2021/12/FHJMD79VkAEe9R-.jpg" alt=""height="210" width="140"></a></div>
+    </main>
+</body>
+</html>
